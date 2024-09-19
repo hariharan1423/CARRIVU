@@ -1,0 +1,21 @@
+{% extends 'master_template.html' %}
+
+{% block title %}
+LOGIN
+{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <div class="login-logo">
+        LOGO
+    </div>
+    <div class="login-form">
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="zId" id="zId">
+            <input type="password" name="passwd" id="passwd">
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+</div>
+{% endblock %}

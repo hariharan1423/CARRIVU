@@ -11,3 +11,21 @@
     <p>Hello world!</p>
 </body>
 </html>
+{% extends 'master_template.html' %} {% block title %} Home {% endblock %} {% block content %}
+<div class="container">
+  <div class="navbar">
+    <p>NAV</p>
+  </div>
+  <div class="section-one">
+    <div class="car">
+      <p>CAR</p>
+    </div>
+    <div class="listOfCars">
+      <p>LIST OF CARS</p>
+    </div>
+  </div>
+  <div class="reviews">
+    <p>REVIEWS</p>
+  </div>
+</div>
+{% endblock %}
